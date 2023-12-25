@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Form</title>
+
+<body>
+  
+<div class="registration" style="background-color:LightGreen;">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Online Apply for Al-Falah University</h2>
+
+<marquee width="100%" direction="left" height="20px"style="color: blue;background-color: lightyellow;"behavior="alternate"><b>
+Welcome To Al-Falah  University.
+</b></marquee>
+
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Candidate Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Father Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Enter Your father's name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="email" placeholder="Enter Your email address..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Adhaar No.</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Enter Your Adhaar no..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Contact No.</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Enter Your Contact no..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">-----select-----</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="usa">INDIA</option>
+        <option value="usa">CHINA</option>
+        <option value="usa">TURKEY</option>
+        <option value="usa">UZBEKISTAN</option>
+        <option value="usa">SYRIA</option>
+      </select>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-25">
+      <label for="State">State</label>
+    </div>
+
+    <div class="col-75">
+      <select id="State" name="State">
+        <option value="australia">-----select----- </option>
+        <option value="australia">Bihar</option>
+        <option value="canada">UP</option>
+        <option value="usa">Jammu & Kashmir</option>
+        <option value="usa">Haryana</option>
+        <option value="usa">Mumbai</option>
+        <option value="usa">Gujrat</option>
+        <option value="usa">Delhi</option>
+        <option value="usa">karnataka</option>
+      </select>
+    </div>
+  </div>
+
+   
+
+
+<div class="row">
+    <div class="col-25">
+      <label for="Application">Application For</label>
+    </div>
+    <div class="col-75">
+      <select id="Application" name="Application For">
+          <option value="australia">-----select-----</option>
+        <option value="australia">Diploma Course</option>
+        <option value="canada">B.tech Course </option>
+        <option value="usa">Graduation Course</option>
+        <option value="usa">Post Graduation Course</option>
+        <option value="usa">Paramedical Course</option>
+        <option value="usa">MBBS Course</option>
+       
+
+      </select>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-25">
+      <label for="lname">Permanent Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Enter your address..">
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-25">
+      <label for="lname">Date Of Birth</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Enter Your Date of Birth.">
+    </div>
+  </div>
+
+
+<form action="/action_page.php">
+  <p>Gender:</p>
+  <input type="radio" id="html" name="fav_language" value="Male">
+  <label for="html">Male</label><br>
+  <input type="radio" id="css" name="fav_language" value="Female">
+  <label for="css">Female</label><b>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>

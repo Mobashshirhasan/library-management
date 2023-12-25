@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.backimg{
+	width: 100%;
+	height: 100vh%;
+/*	background-color:green;*/
+	background-image: url('egg1.jpg');
+	background-repeat: no-repeat;
+}
+
+.menu{
+width: 70%;
+height: 80px;
+background-color: orange;
+}
+.uls{
+	display: flex;
+	gap: 3rem;
+	position: absolute;
+	top: 10rem;
+	right:14rem;
+}
+.lis{
+	list-style: none;
+	background-color: yellow;
+}
+.lis:hover{
+	background-color: red;
+}
+
